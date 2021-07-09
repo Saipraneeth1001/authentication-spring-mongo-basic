@@ -9,17 +9,17 @@ Here there is no controller method mapped for creating the user, so user creatio
 
 A single user in the MongoDB user's collection looks like:
 {
-	username:"sai",
-	password:"-- encode the password using bcrypt encoder and place it here in the db"
-	roles: {
-			{
-		name:"ADMIN",
-			},
-			{
-		name:"USER"	
-	}
-	}
-}
+	username:"sai", &nbsp;
+	password:"-- encode the password using bcrypt encoder and place it here in the db", &nbsp;
+	roles: {  &nbsp;
+			{ &nbsp;
+		name:"ADMIN", &nbsp;
+			}, &nbsp;
+			{ &nbsp;
+		name:"USER"	 &nbsp;
+	} &nbsp;
+	} &nbsp;
+} &nbsp;
 
 Since user creation is not implemented we won't be able to encode the password. So wihle creating the user in the database itself we need to encode the password.
 
